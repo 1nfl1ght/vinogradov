@@ -27,11 +27,16 @@
         <li><p>Ссылка, запрещенная для индексации поисковиками: <a target="blank" href="http://example.com"><noindex>Ссылка</noindex></a></p></li>
         <li><p>Находящаяся в теле абзаца <a target="blank" href="https://www.kubsu.ru">ссылка</a> на сайт кубгу</p></li>
         <li><p>Ссылка-изображение: <a target="blank" href="https://www.kubsu.ru"><img src="60290-blue-brand-font-button-free-png-hq.png" style="height: 25px; width: 100px;"></a></p></li>
-        <li><p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map):  <a target="blank" href="">Ссылка</a></p></li>
+        <li><p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map):</p></li>
+        <map name="links">
+            <area shape="circle" coords="0,0,470,20" href="https://kubsu.ru/" alt="сайт кубгу">
+            <area shape="rect" coords="507,58,908,475" href="https://kubstu.ru/" alt="сайт кубгту">
+        </map>
+        <img src="64523654.PNG" usemap="#links">
         <li><p>Относительная на страницу в текущем каталоге: <a target="blank" href="scnd.html">Ссылка</a></p></li>
         <li><p>Относительная на страницу в каталоге about: <a target="blank" href="about/third.html">Ссылка</a></p></li>
-        <li><p>18. Относительная на страницу в каталоге выше текущего: <a target="blank" href="../leveldown.html">Ссылка</a></p></li>
-        <li><p>19. Относительная на страницу в каталоге двумя уровнями выше: <a target="blank" href="../../doubleLevelDoiwn.html">Ссылка</a></p></li>
+        <li><p>Относительная на страницу в каталоге выше текущего: <a target="blank" href="../leveldown.html">Ссылка</a></p></li>
+        <li><p>Относительная на страницу в каталоге двумя уровнями выше: <a target="blank" href="../../doubleLevelDoiwn.html">Ссылка</a></p></li>
     </ol> 
     <form>
         <legend>Форма</legend>
