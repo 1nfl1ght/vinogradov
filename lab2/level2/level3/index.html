@@ -73,7 +73,7 @@
                 <li><p>Ссылка без href: <a>Ссылка</a></p></li>
                 <li><p>Ссылка с пустым href: <a href="">Ссылка</a></p></li>
                 <li><p>Ссылка, по которой запрещен переход поисковикам: <a target="blank" rel="nofollow" href="http://example.com">Ссылка</a></p></li>
-                <li><p>Ссылка, запрещенная для индексации поисковиками: <a target="blank" href="http://example.com"><!--noindex-->Ссылка<!--/noindex--></a></p></li>
+                <li><p>Ссылка, запрещенная для индексации поисковиками: <a target="blank" href="http://example.com"><noindex>Ссылка</noindex></a></p></li>
                 <li><p>Находящаяся в теле абзаца <a target="blank" href="https://www.kubsu.ru">ссылка</a> на сайт кубгу</p></li>
                 <li><p>Ссылка-изображение: <a target="blank" href="https://www.kubsu.ru"><img src="60290-blue-brand-font-button-free-png-hq.png" style="height: 25px; width: 100px;" alt="Картинка1"></a></p></li>
                 <li><p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map):</p>
@@ -108,13 +108,12 @@
                         <th>колонка 2</th>
                     </tr>
                     <tr>
-                        <td>Ячейка 11</td>
+                        <td rowspan="2">Ячейка 11 + 21</td>
                         <td>Ячейка 12</td>
                         <td>Ячейка 13</td>
                     </tr>
                     <tr>
-                        <td>Ячейка 11</td>
-                        <td colspan="2">Ячейка 12, объединенная с 13</td>
+                        <td colspan="2">Ячейка 12 + 13</td>
                     </tr>
                 </tbody>
             </table>
