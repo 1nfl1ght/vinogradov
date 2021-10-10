@@ -34,10 +34,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             calculate.onclick = function() {
-            let worth = document.querySelector('#worth').value;
-            let count = document.querySelector('#count').value;
+            let worth = document.querySelector('#worth').value.match(/^\d+$/);
+            let count = document.querySelector('#count').value.match(/^\d+$/);
             let result;
-            if ( Number(worth) <= 0 || Number(count) <= 0) {
+            if (worth === null || Number(count) === null) {
                 document.querySelector('p').innerHTML='<span style="color: red;">Введи коррекнтые данные</span>';
             } else {
                 result = Number(worth) * Number(count);
