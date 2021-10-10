@@ -36,8 +36,13 @@
             calculate.onclick = function() {
             let worth = document.querySelector('#worth').value;
             let count = document.querySelector('#count').value;
-            let result = Number(worth) * Number(count);
-            document.querySelector('p').innerHTML=result;
+            let result;
+            if ( Number(worth) <= 0 || Number(count) <= 0) {
+                document.querySelector('p').innerHTML='<span style="color: red;">Введи коррекнтые данные</span>';
+            } else {
+                result = Number(worth) * Number(count);
+                document.querySelector('p').innerHTML=result;
+            }
         }
         });
     </script>
