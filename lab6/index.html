@@ -51,6 +51,13 @@
             }
         }
         });
+        
+//         <input type="text"> oninput: <span id="result"></span>
+        var input = document.body.children[0];
+
+        input.oninput = function() {
+        document.getElementById('result').innerHTML = input.value;
+        };
     </script>
 </body>
 </html>
