@@ -65,7 +65,7 @@ function updatePrice() {
       }
     }
   });
-  document.querySelector('.result').innerHTML = count * price;
+  document.querySelector('.result').innerHTML = count * price + " рублей";
   }
 }
 
