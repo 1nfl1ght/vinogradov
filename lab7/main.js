@@ -4,5 +4,14 @@ $( document ).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 4,
     speed: 1000,
+    responsive:[
+      {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+  ]
   });
 });
